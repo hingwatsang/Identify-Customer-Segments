@@ -6,24 +6,23 @@ In this project, I worked with real-life data provided to us by our Bertelsmann 
 
 
 <b> Step 1: Preprocessing </b> </br>
-Before I started an analysis, I first explored and understood the data that you are working with. In this (and the next) step of the project, you’ll be working with the general demographics data. As part of your investigation of dataset properties, you must attend to a few key points:
-You will create a cleaning procedure that you will apply first to the general demographic data, then later to the customers data.
+Before I started an analysis, I first explored and understood the data that you are working with. In this (and the next) step of the project, I worked with the general demographics data. As part of my investigation of dataset properties, I attended to a few key points: </br>
+I created a cleaning procedure that I applied first to the general demographic data, then later to the customers data.
 
-Step 2: Feature Transformation
-Now that your data is clean, you will use dimensionality reduction techniques to identify relationships between variables in the dataset, resulting in the creation of a new set of variables that account for those correlations. In this stage of the project, you will attend to the following points:
+<b> Step 2: Feature Transformation </b> </br>
+Now that my data is clean, I used dimensionality reduction techniques to identify relationships between variables in the dataset, resulting in the creation of a new set of variables that account for those correlations. In this stage of the project, I attended to the following points: </br>
 
-The first technique that you should perform on your data is feature scaling. What might happen if we don’t perform feature scaling before applying later techniques you’ll be using?
-Once you’ve scaled your features, you can then apply principal component analysis (PCA) to find the vectors of maximal variability. How much variability in the data does each principal component capture? Can you interpret associations between original features in your dataset based on the weights given on the strongest components? How many components will you keep as part of the dimensionality reduction process?
-You will use the sklearn library to create objects that implement your feature scaling and PCA dimensionality reduction decisions.
+<li> The first technique that I should perform on my data is feature scaling. </li>
+<li> Once I scaled my features, I can then apply principal component analysis (PCA) to find the vectors of maximal variability. </li>
+<li> I used the sklearn library to create objects that implement my feature scaling and PCA dimensionality reduction decisions. </li>
+</br>
 
-Step 3: Clustering
-Finally, on your transformed data, you will apply clustering techniques to identify groups in the general demographic data. You will then apply the same clustering model to the customers dataset to see how market segments differ between the general population and the mail-order sales company. You will tackle the following points in this stage:
+<b>Step 3: Clustering</b></br>
+Finally, on my transformed data, I applied clustering techniques to identify groups in the general demographic data. I then applied the same clustering model to the customers dataset to see how market segments differ between the general population and the mail-order sales company. I tackled the following points in this stage:
+</br>
+<li> Use the k-means method to cluster the demographic data into groups. </li>
+<li> Apply the techniques and models that I fit on the demographic data to the customers data: data cleaning, feature scaling, PCA, and k-means clustering. </li>
+<li> Compare the distribution of people by cluster for the customer data to that of the general population. </li>
+</br>
+Sklearn was used in this part of the project, to perform my k-means clustering. In the end, I exported the completed notebook with my work as an HTML file, which will serve as a report documenting my approach and findings.
 
-Use the k-means method to cluster the demographic data into groups. How should you make a decision on how many clusters to use?
-Apply the techniques and models that you fit on the demographic data to the customers data: data cleaning, feature scaling, PCA, and k-means clustering. Compare the distribution of people by cluster for the customer data to that of the general population. Can you say anything about which types of people are likely consumers for the mail-order sales company?
-sklearn will continue to be used in this part of the project, to perform your k-means clustering. In the end, you will export the completed notebook with your work as an HTML file, which will serve as a report documenting your approach and findings.
-
-Step 4: Review and Submit the Project
-Before you submit your project for review, you should first review the project rubric. Your project will be evaluated by an Udacity reviewer using this criteria, so you should make a self-evaluation as well. In order for your project to pass review, it must meet all specifications.
-
-Once you are ready for project submission, export an HTML version of your notebook and add to your workspace submission, then submit your entire project from the workspace using in the button in the bottom right.
